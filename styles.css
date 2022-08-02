@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cal_wrapper{
+    width: 500px;
+    border: 1px red solid;
+}
+.cal_wrapper input{
+    width: 100%;
+}
+.num_wrapper{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cal_wrapper div{
+    border: 1px green solid;
+    text-align: center;
+    cursor: pointer;
+}
