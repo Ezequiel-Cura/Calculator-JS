@@ -12,21 +12,40 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cal_wrapper{
+
+.calculator_wrapper{
     width: 500px;
     border: 1px red solid;
-}
-.cal_wrapper input{
-    width: 100%;
-}
-.num_wrapper{
-    
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(100px,auto) repeat(5,100px);
 }
 
-.cal_wrapper div{
+.calculator_wrapper div{
     border: 1px green solid;
-    text-align: center;
+    font-size: 1.5rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.calculator_wrapper div:hover{
+    background-color: grey;
+}
+    
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    display: inline-block;
+}
+
+.input{
+    grid-column: 1/-1;
 }
